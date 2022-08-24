@@ -46,7 +46,7 @@ const Layout: FC = () => {
         setComments(commentsTmp);
     }
     return (<div className="w-full h-full flex flex-col xl:px-[250px] items-center xl:py-[50px] bg-white">
-        <div className="w-full py-[40px] px-[20px] xl:py-[100px] xl:px-[400px] borde rounded-2xl flex justify-center gap-[30px] ">
+        <div className="w-full py-[40px] px-[20px] xl:py-[100px] lg:px-[100px] 2xl:px-[400px] borde rounded-2xl flex justify-center gap-[30px] ">
             <div className=" w-[50px] h-[45px] bg-[#008F8C] rounded-full mt-[20px] ">
             </div>
             <div className=" w-full flex flex-col gap-[20px]" > 
@@ -62,7 +62,7 @@ const Layout: FC = () => {
                 comments.length > 0 ? <div>
                     {
                         comments.map((item) => (
-                            <div className="w-full xl:px-[400px] " key={item.date}>
+                            <div className="w-full px-[20px] xl:px-[400px] " key={item.date}>
                                 <Comment author={item.author} date={item.date} message={item.message} />
                             </div>
                         ))
