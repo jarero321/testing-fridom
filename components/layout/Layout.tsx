@@ -57,12 +57,12 @@ const Layout: FC = () => {
                 </div>
              </div>
         </div>
-        <div className="w-full px-[20px] " >
+        <div className="w-full" >
             {
                 comments.length > 0 ? <div>
                     {
                         comments.map((item) => (
-                            <div className="w-full" key={item.date}>
+                            <div className="w-full xl:px-[400px] " key={item.date}>
                                 <Comment author={item.author} date={item.date} message={item.message} />
                             </div>
                         ))
